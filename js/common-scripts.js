@@ -8,6 +8,11 @@
             $(".main-nav").fadeToggle()
         });
         
+        // Phone nav click function
+        $('.go-top-btn').click(function () {
+            $('html, body').animate({scrollTop:0}, '1500');
+        });
+        
         $('.pricing-tab-trigger ul li').click(function (e) {
             e.preventDefault();
             $('.pricing-tab-trigger ul li').removeClass('active');
